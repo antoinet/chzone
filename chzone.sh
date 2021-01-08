@@ -5,5 +5,5 @@ dig -y hmac-sha512:tsig-zonedata-ch-public-21-01:stZwEGApYumtXkh73qMLPqfbIDozWKZ
 grep -P "IN\tNS" ch.txt | awk '{print $1}' | sort | uniq > ch_uniq.txt
 
 git add ch_uniq.txt
-git commit -m "autocommit"
+git commit -m $(head -1 ch.txt | awk '{print $7}')
 git push
