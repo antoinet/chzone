@@ -9,7 +9,7 @@ cybercrime, scientific and social research or for other purposes in the public i
 
 Find the commit in which a particular domain was added/removed
 ```
-$ git log -A chplusplus.ch
+$ git log -S chplusplus.ch
 commit a106bf5750bfeed3c0fc413b66c9e7f580b4fd62
 Author: Antoine Neuenschwander <antoine@schoggi.org>
 Date:   Mon Jan 18 00:45:29 2021 +0000
