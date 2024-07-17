@@ -22,7 +22,7 @@ jobs:
 
       # extract domains
       - name: Extract domains
-        run: grep -P "IN\tNS" ch.txt | awk '{print $1}' | sort | uniq > ch_uniq.txt
+        run: grep -P "IN\sNS" ch.txt | awk '{print $1}' | sort | uniq > ch_uniq.txt
               
       # commit back to repo
       - name: Commit new domains
